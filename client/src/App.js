@@ -3,6 +3,7 @@ import Nav from "./components/nav";
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Search from "./pages/search";
 import Saved from "./pages/saved";
+import NoMatch from "./pages/nomatch";
 
 class App extends Component {
   render() {
@@ -19,6 +20,9 @@ class App extends Component {
             </Route>
             <Route path="/search">
               <Search />
+            </Route>
+            <Route path="/">
+              <NoMatch />
             </Route>
           </Switch>
       </div>
